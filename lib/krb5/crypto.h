@@ -128,6 +128,7 @@ struct _krb5_encryption_type {
     size_t prf_length;
     krb5_error_code (*prf)(krb5_context,
 			   krb5_crypto, const krb5_data *, krb5_data *);
+	unsigned int ssf;
 };
 
 #define ENCRYPTION_USAGE(U) (((U) << 8) | 0xAA)

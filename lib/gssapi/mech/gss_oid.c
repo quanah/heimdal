@@ -223,6 +223,9 @@ gss_OID_desc GSSAPI_LIB_VARIABLE __gss_c_ma_compress_oid_desc = { 7, rk_UNCONST(
 /* GSS_C_MA_CTX_TRANS - 1.3.6.1.5.5.13.27 */
 gss_OID_desc GSSAPI_LIB_VARIABLE __gss_c_ma_ctx_trans_oid_desc = { 7, rk_UNCONST("\x2b\x06\x01\x05\x05\x0d\x1b") };
 
+/* GSS_C_SEC_CONTEXT_SASL_SSF - 1.2.840.113554.1.2.2.5.15 */
+gss_OID_desc GSSAPI_LIB_VARIABLE __gss_c_sec_context_sasl_ssf_oid_desc = { 11, rk_UNCONST("\x2a\x86\x48\x86\xf7\x12\x01\x02\x02\x05\x0f") };
+
 struct _gss_oid_name_table _gss_ont_ma[] = {
   { GSS_C_MA_AUTH_INIT, "GSS_C_MA_AUTH_INIT", "auth-init-princ", "" },
   { GSS_C_MA_AUTH_INIT_ANON, "GSS_C_MA_AUTH_INIT_ANON", "auth-init-princ-anon", "" },
