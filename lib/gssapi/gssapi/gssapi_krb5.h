@@ -158,6 +158,12 @@ GSSAPI_LIB_FUNCTION OM_uint32 GSSAPI_LIB_CALL
 gsskrb5_plugin_register(struct gsskrb5_krb5_plugin *);
 
 
+GSSAPI_LIB_FUNCTION OM_uint32 GSSAPI_LIB_CALL
+gsskrb5_sec_context_sasl_ssf(OM_uint32 *minor_status,
+			gss_ctx_id_t context_handle,
+			int /*ad_type*/,
+			gss_buffer_t /*ad_data*/);
+
 /*
  * Lucid - NFSv4 interface to GSS-API KRB5 to expose key material to
  * do GSS content token handling in-kernel.
